@@ -737,6 +737,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 272F1DBC1C6A392A0098F620;
@@ -1149,6 +1150,7 @@
 				PRODUCT_NAME = Serpent;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1169,6 +1171,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Serpent;
 				PRODUCT_NAME = Serpent;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1182,6 +1185,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SerpentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_PATHS = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1195,6 +1199,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SerpentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_PATHS = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
