@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Serpent"
-  s.version      = "1.1.0"
+  s.version      = "1.1.5"
   s.summary      = "A protocol to serialize Swift structs and classes for encoding and decoding."
   s.homepage     = "https://github.com/nodes-ios/Serpent"
   s.description  = <<-DESC
@@ -51,6 +51,7 @@ Pod::Spec.new do |s|
   #
 
   s.platforms = { :ios => "8.0", :osx => "10.10", :watchos => "2.0", :tvos => "9.0" }
+  s.swift_version = "4.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -58,7 +59,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source = { :git => "https://github.com/nodes-ios/Serpent.git", :tag => s.version }
+  s.source = { :git => "https://github.com/eovendo/Serpent.git", :tag => "#{s.version}" }
 
   # ――― Subspecs ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -84,14 +85,14 @@ Pod::Spec.new do |s|
   # Subspec for Alamofire extension
   s.subspec 'AlamofireExtension' do |alamo|
     alamo.dependency 'Serpent/Core'
-    alamo.dependency 'Alamofire', '~> 4.1'
+    alamo.dependency 'Alamofire'
     alamo.source_files = "Serpent/Serpent/Classes/Extensions/AlamofireExtension.swift"
   end
 
   # Subspec for Cashier extension
   s.subspec 'CashierExtension' do |cashier|
     cashier.dependency 'Serpent/Core'
-    cashier.dependency 'Cashier', '~> 1.2.1'
+    cashier.dependency 'Cashier'
     cashier.source_files = "Serpent/Serpent/Classes/Extensions/CashierExtension.swift"
   end
 
