@@ -63,12 +63,13 @@ Pod::Spec.new do |s|
 
   # ――― Subspecs ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-
   s.default_subspecs = 'Core'
 
   # Main subspec
   s.subspec 'Core' do |core|
     # Add all files
+    core.dependency 'Alamofire'
+    core.dependency 'Cashier'
     core.source_files = "Serpent/Serpent/Classes/**/*"
 
     # Exclude extensions by default
