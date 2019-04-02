@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Serpent"
-  s.version      = "1.1.5"
+  s.version      = "1.2"
   s.summary      = "A protocol to serialize Swift structs and classes for encoding and decoding."
   s.homepage     = "https://github.com/nodes-ios/Serpent"
   s.description  = <<-DESC
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   #
 
   s.platforms = { :ios => "8.0", :osx => "10.10", :watchos => "2.0", :tvos => "9.0" }
-  s.swift_version = "4.0"
+  s.swift_version = "5.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
