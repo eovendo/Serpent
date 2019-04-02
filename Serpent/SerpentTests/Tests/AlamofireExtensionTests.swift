@@ -120,7 +120,7 @@ class AlamofireExtensionTests: XCTestCase {
 				break
 			}
 		}
-		let unwrapper: Parser.Unwrapper = { $0.0["data"] }
+		let unwrapper: Parser.Unwrapper = { body, _ in body["data"] }
 		
 		if let url = urlForResource(resource: "NestedArrayTest") {
 			manager.request(url, method: .get).responseSerializable(handler, unwrapper: unwrapper)
@@ -156,7 +156,7 @@ class AlamofireExtensionTests: XCTestCase {
 				break
 			}
 		}
-		let unwrapper: Parser.Unwrapper = { $0.0["data"] }
+		let unwrapper: Parser.Unwrapper = { body, _ in body["data"] }
 		
 		if let url = urlForResource(resource: "NestedArrayTest") {
 			manager.request(url, method: .get).responseSerializable(handler, unwrapper: unwrapper)
@@ -212,7 +212,7 @@ class AlamofireExtensionTests: XCTestCase {
         }
         if let url = urlForResource(resource: "ArrayTestOneObject") {
             manager.request(url, method: .get).responseSerializable(handler,
-                                                                    unwrapper: { return $0.0["nonexistent"] })
+                                                                    unwrapper: { body, _ in body["nonexistent"] })
         }
         waitForExpectations(timeout: timeoutDuration, handler: nil)
     }

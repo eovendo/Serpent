@@ -704,11 +704,11 @@
 				TargetAttributes = {
 					272F1DC51C6A392A0098F620 = {
 						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1020;
 					};
 					272F1DCF1C6A392A0098F620 = {
 						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1020;
 					};
 					2732EC8C1C9F21A500BFD4E1 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1150,7 +1150,7 @@
 				PRODUCT_NAME = Serpent;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1171,7 +1171,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Serpent;
 				PRODUCT_NAME = Serpent;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1185,7 +1185,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SerpentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_PATHS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1199,7 +1199,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SerpentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_PATHS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
